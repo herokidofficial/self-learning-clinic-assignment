@@ -2,12 +2,12 @@
   "name": "self-learning-clinic-assignment",
   "version": "1.0.0",
   "description": "Programming Logic, TDD, Git and Version Control",
-  "main": "index.js",
-  "dependencies": {
-    "jasmine": "^2.5.3"
+  "main": "app/index.js",  
+  "directories": {
+    "test": "tests"
   },
   "scripts": {
-    "test": "jasmine test.js"
+    "test": "jasmine tests/test.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/herokidofficial/self-learning-clinic-assignment/issues"
   },
-  "homepage": "https://github.com/herokidofficial/self-learning-clinic-assignment#readme"
+  "homepage": "https://github.com/herokidofficial/self-learning-clinic-assignment#readme",
+  "dependencies": {
+    "jasmine": "^2.5.3"
+  }
 }
