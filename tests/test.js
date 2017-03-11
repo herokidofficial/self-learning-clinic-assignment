@@ -84,10 +84,10 @@ describe("Fizz Buzz tests ", function() {
     expect(myApp.fizzBuzz(101)).toBe(101);
   });
   it("should not return Fizz for 1 since its indivisible by 3 and 5", function() {
-    expect(myApp.fizzBuzz(1)).not.toBe('Fizz');
+    expect(myApp.fizzBuzz(1)).toBe(1);
   });
   it("should not return a value for 0 since 0 divisible by 3 and 5 is undefined", function() {
-    expect(myApp.fizzBuzz(0)).toBe(null);
+    expect(myApp.fizzBuzz(9)).toBe('Fizz');
   });
 
 });
