@@ -28,19 +28,20 @@ module.exports = {
 
 	/*check if arithmetic, geometric progression*/
 
-	aritGeo: function() {
-		switch(arr) {
-			case 'arr[i + 1] - arr[i] !== diff':
-				return "Arithmetic";
-				break;
-			case 'arr[i + 1] / arr[i] !== ratio':
-				return "Geometric";
-				break;
-			case 'arr[i + 1] - arr[i] !== diff && arr[i + 1] / arr[i] !== ratio':
-				return -1;
-			case 'arr = []':
-				return 0;
-		}
-	}
+	aritGeo: function(arr) {
+    	var len = arr.length;
+    	var diff1 = arr[1] - arr[0];
+    	var diff2 = arr[len - 1] - arr[len -2];
+    	var ratio1 = arr[1] / arr[0];
+    	var ratio2 = arr[len - 1] / arr[len -2];
+    	if (len === 0) {
+      		return 0;
+    	} else if (diff1 === diff2) {
+      		return "Arithmetic";
+    	} else if (ratio1 === ratio2) {
+      		return "Geometric";
+    	} else {
+      		return -1;
+    	}
+  }
 }
-	}
